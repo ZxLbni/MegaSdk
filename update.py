@@ -59,12 +59,12 @@ if DATABASE_URL:
 UPSTREAM_REPO = environ.get('UPSTREAM_REPO', '')
 log_info(f'Entered upstream repo: {UPSTREAM_REPO}')
 if len(UPSTREAM_REPO) == 0:
-    UPSTREAM_REPO = 'https://gitlab.com/Dawn-India/Z-Mirror'
+    UPSTREAM_REPO = 'https://github.com/ZxLbni/NoobxZmirror'
 
 UPSTREAM_BRANCH = environ.get('UPSTREAM_BRANCH', '')
 log_info(f'Entered upstream branch: {UPSTREAM_BRANCH}')
 if len(UPSTREAM_BRANCH) == 0:
-    UPSTREAM_BRANCH = 'upstream'
+    UPSTREAM_BRANCH = 'mega'
 
 if ospath.exists('.git'):
     srun(["rm", "-rf", ".git"])
